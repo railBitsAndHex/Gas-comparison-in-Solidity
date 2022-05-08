@@ -26,7 +26,7 @@ module.exports = {
   networks: {
     hardhat: {},
     localhost: {
-      chainId: process.env.LOCALHOST_CHAINID,
+      chainId: parseInt(process.env.LOCALHOST_CHAINID),
       url: process.env.LOCALHOST_URL,
     },
 
